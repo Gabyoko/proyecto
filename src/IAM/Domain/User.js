@@ -5,7 +5,6 @@ export class User {
         this.role = role;
     }
 
-    // Método para saber si tiene permisos
     isAdmin() {
         return this.role === 'admin';
     }
