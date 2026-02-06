@@ -5,7 +5,7 @@ export class User {
         this.role = role;
     }
 
-    isAdmin() {
+   isAdmin() {
         return this.role === 'admin';
     }
 }

@@ -1,12 +1,18 @@
 <script setup>
 
 import { RouterView } from 'vue-router'
+import LoginView from "@/IAM/Presentation/Views/login-view.vue";
 </script>
 
 <template>
-<RouterView ></RouterView>
+<LoginView></LoginView>
 </template>
 
-<style scoped>
+<style >
+html, body {
+  margin: 0 !important;
+
+
+}
 
 </style>

@@ -43,6 +43,11 @@ const handleLogin = async () => {
 <template>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
+
+  <div class="container">
+
+     <div class="LOGIN">
+       <div>
   <h2 class="titulo">Log In</h2>
 
   <div class="yoko">
@@ -70,6 +75,13 @@ const handleLogin = async () => {
         </button>
       </div>
     </form>
+  </div>
+
+</div>
+     </div>
+    <div class="imagen">
+      <img src="@/assets/fotro.jpg">
+    </div>
 
   </div>
 </template>
@@ -123,8 +135,35 @@ const handleLogin = async () => {
   cursor: not-allowed;
 }
 .yoko{
-  width: 350px;
+
+  width: 400px;
   /* height: 500px; Quité la altura fija para evitar problemas si crece el contenido */
-  margin: 0 auto;
+  margin:  auto;
+}
+
+.LOGIN{
+flex: 1;
+  width: fit-content;
+  margin:  20rem 0px 0px 11rem;
+display: flex;
+
+}
+.container{
+  display: flex;
+
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.imagen{
+flex: 2;
+
+}
+.imagen img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* Rellena el espacio sin deformarse */
+  display: block;
+
 }
 </style>
